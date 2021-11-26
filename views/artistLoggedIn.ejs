@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+<br>
+
+<h1>Artist: <%= artistData.artistName %></h1>
+<p>Seller Name: <%= artistData.sellerName %></p>
+<p>Email: <%= artistData.email %></p>
+<p>ratting: <%= artistData.ratting %> <i class="bi bi-star-fill"></i></p>
+
+<br>
+
+<h6>Your Songs: <p>     </p><a href="/tracks"> <button class="btn btn-primary" type="submit">My Tracks</button> </a><h6>
+
+<br>
+
+<h6>Your Albums: <p>    </p> <a href="/albums"><button class="btn btn-primary" type="button">My Albums</button></a> <h6>
+
+
+
+
+<%- include('partials/footer'); -%>

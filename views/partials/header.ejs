@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>OMMS</title>
+  <meta charset="utf-8">
+
+  <!-- bootstrap cdns -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+  <!-- style sheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+
+    <a class="navbar-brand ps-3" href="/"><i class="bi bi-vinyl-fill"></i> MUSIC APP</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+      <ul class="navbar-nav ms-auto pe-5">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <%=visualLogin%>" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="/customerLogin">Customer  Login</a></li>
+            <li><a class="dropdown-item" href="/artistLogin">Artist  Login</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <%= visualLogin %>" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink1">
+            <li><a class="dropdown-item" href="/customerRegister">Customer  Registration</a></li>
+            <li><a class="dropdown-item" href="/artistRegister">Artist  Registration</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= visualCart %>" href="/cart/<%= CustomerId %>"><i class="bi bi-cart-plus-fill"></i> Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= visualCart %>" href="/wishlist/<%= CustomerId %>"><i class="bi bi-music-note-list"></i> Wishlist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About us</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  
+  <hr style="border:0px ;background-color:yellow;height:10px;width:100%; margin-top: 0%;" />
+
+
+  <div class="container">

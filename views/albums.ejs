@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+
+<br>
+
+<h1> My Albums </h1>
+
+<br>
+
+<% for(let i = 0; i < Albums.length; i++) { %>
+    <h4><span><i class="bi bi-file-earmark-music-fill"></i>   -      </span><%= Albums[i].albumName %></h4>
+<% } %>
+
+<br>
+
+
+<a href="/artistLoggedIn"><button type="button" class="btn btn-primary" name="My">My Account</button></a>
+
+
+<%- include('partials/footer'); -%>

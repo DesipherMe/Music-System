@@ -1,0 +1,55 @@
+<%- include("partials/header"); -%>
+
+
+<h1 style="color: red;" ><%= name %></h1>
+
+<br>
+
+
+<form class="visually-hidden" action="/info/get" method="GET">
+  <input type="submit" name="" value="GET">
+</form>
+
+<br>
+
+
+
+
+<% for(let i = 0; i < 12; i+=3) { %>
+
+  <% let color = ["lightyellow", "white"] %>
+
+  <div class="container-fluid" id="vachche" style="background-color: <%= color[i%2] %>;">
+    <div class="row">
+      <div class="feature-box col-md-4 col-12">
+        <i class="bi bi-music-note-beamed" style="font-size: xx-large; color: rgb(255, 0, 140);"></i>
+        <h4><%= Songs[i].trackName %></h4>
+        <p><%= Songs[i].trackName %></p>
+        <button class="btn" style="background-color: lime;">BUY$</button>
+      </div>
+
+      <div class="feature-box col-md-4 col-12">
+        <i class="bi bi-music-note-beamed" style="font-size: xx-large; color: rgb(255, 0, 140);"></i>
+        <h4><%= Songs[i+1].trackName %></h4>
+        <button class="btn" style="background-color: lime;">BUY$</button>
+      </div>
+
+      <div class="feature-box col-md-4 col-12">
+        <i class="bi bi-music-note-beamed" style="font-size: xx-large; color: rgb(255, 0, 140);"></i>
+        <h4><%= Songs[i+2].trackName %></h4>
+        <button class="btn" style="background-color: lime;">BUY$</button>
+      </div>
+    </div>
+  </div>
+
+
+<% } %>
+
+
+<br>
+<br>
+
+
+
+
+<%- include("partials/footer"); -%>

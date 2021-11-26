@@ -1,0 +1,31 @@
+<%- include('partials/header'); -%>
+
+<br>
+
+<h2>Cart</h2>
+
+<br>
+
+<% for(let i = 0; i < cartData.length; i++) { %>
+  <h6>Track Name: <%= cartData[i].trackName %></h6>
+  <p>Price: <%= cartData[i].amount %></p>
+<% } %>
+
+
+<% if(cartData.length === 0) { %>
+  <h1>Your Cart is Empty. </h1>
+<% } %>
+
+
+
+<br>
+<br>
+
+<a href="/customerLoggedIn"><button type="button" class="btn btn-primary" name="My">My Account</button></a>
+
+
+
+
+
+
+<%- include('partials/footer'); -%>

@@ -1,0 +1,26 @@
+<%- include('partials/header'); -%>
+
+<br>
+
+<h2>Wishlist</h2>
+
+<br>
+
+<% for(let i = 0; i < wishlistData.length; i++) { %>
+  <h6>Track Name: <%= wishlistData[i].trackName %></h6>
+  <p>Price: <%= wishlistData[i].amount %></p>
+<% } %>
+
+<% if(wishlistData.length === 0) { %>
+  <h1>Your Wishlist is Empty. </h1>
+<% } %>
+
+
+<br>
+<br>
+
+<a href="/customerLoggedIn"><button type="button" class="btn btn-primary" name="My">My Account</button></a>
+
+
+
+<%- include('partials/footer'); -%>

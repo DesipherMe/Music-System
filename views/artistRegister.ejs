@@ -1,0 +1,62 @@
+<%- include('partials/header'); -%>
+
+<div class="container-fluid">
+
+
+    <main class="form-signin">
+      <p style="color: red"><%= message1 %></p>
+      <p style="color: red"><%= message2 %></p>
+      
+    
+    
+      <form class="" action="/artistRegister" method="post">
+        <div class="mb-3">
+          <label class="form-label">Artist Name: </label>
+          <input type="text" class="form-control" name="ArtistName" required>
+    
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Seller Name: </label>
+            <input type="text" class="form-control" name="SellerName" required>
+      
+          </div>
+        <div class="mb-3">
+          <label class="form-label">Email: </label>
+          <input type="email" class="form-control" name="Email" required>
+          <div class="form-text">We'll never share your Email with anyone else.</div>
+        </div>
+    
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Gender</label>
+          <input type="text" class="form-control" name="Gender" required>
+          <div class="form-text">Please Type <span style="color:red;">Male</span> or <span style="color:red;">Female</span> according to your gender</div>
+        </div>
+    
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Username: </label>
+          <input type="text" class="form-control" name="Username" required>
+        </div>
+    
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password: </label>
+          <input type="password" class="form-control" name="Password" required>
+          <div class="form-text">We'll never share your Password with anyone else.</div>
+        </div>
+    
+    
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" required>
+          <label class="form-check-label" for="checkbox">"agree kar hamari conditions"</label>
+        </div>
+        <button type="submit" class="btn btn-primary" name="artistRegister">Register</button>
+      </form>
+    
+    </main>
+    
+    </div>
+
+
+    <br>
+    <br>
+
+<%- include('partials/footer'); -%>
